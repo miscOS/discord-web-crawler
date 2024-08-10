@@ -5,12 +5,12 @@ This web crawler based on puppeteer is designed to run in an docker environment.
 
 ## Installation
 
-Clone the repository
+Clone the repository...
 
 ```bash
   git clone https://github.com/miscOS/discord-web-crawler.git
 ```
-and move to the directory to run the compose file. You might want to consider changing some configuration first.
+...and move to the directory to run the compose file. You might want to consider changing some configuration first.
 
 ```bash
   cd discord-web-crawler
@@ -19,7 +19,11 @@ and move to the directory to run the compose file. You might want to consider ch
 
 ## Configuration
 
-The feed configuration is stored in 'data/config.json'. An example configuration is provided within the same folder.
+The configuration is stored in `data/config.json`. The included example will give you an idead of what the configuration should look like. It is easiest to copy it and adapt it to your own requirements.
+
+```bash
+  cp data/example.config.json data/config.json
+```
 
 ## Support
 
