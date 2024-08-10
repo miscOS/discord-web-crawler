@@ -1,0 +1,21 @@
+{
+  "name": "@miscos/discord-web-crawler",
+  "version": "1.0.0",
+  "description": "This web crawler based on puppeteer is designed to run in an docker environment.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "miscOS",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "puppeteer": "^23.0.2",
+    "typescript": "^5.5.4"
+  }
+}

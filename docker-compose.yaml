@@ -1,0 +1,18 @@
+name: news
+
+services:
+  
+  DiscordWebCrawler:
+    image: miscos/discord-web-crawler:1.0.0
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      network: host
+      tags:
+        - "miscos/discord-web-crawler:1.0.0"
+    container_name: WebCrawler
+    network_mode: bridge
+    init: true
+    volumes:
+      - "./data:/usr/src/app/data"
+    restart: unless-stopped

@@ -1,0 +1,49 @@
+{
+    "feeds": [
+        {
+            "title": "Teamfight Tactics",
+            "webhook": "DISCORD_WEBHOOK_HTTPS_URL",
+            "colors": {
+                "internal": "0x77cc44",
+                "external": "0xdd4499"
+            },
+            "sources": [
+                {
+                    "url": "https://teamfighttactics.leagueoflegends.com/de-de/news/",
+                    "searchPattern": {
+                        "section": "a[data-testid^=articlefeaturedcard-component]",
+                        "title": "div[data-testid^=card-title]",
+                        "category": "div[data-testid^=card-category]",
+                        "description": "div[data-testid^=card-description]",
+                        "image": "img[data-testid^=mediaImage]",
+                        "url": "OPTIONAL (IF SECTION IS NOT A <A> ELEMENT)"
+                    }
+                }
+            ],
+            "logfile": "tft",
+            "retention": 10
+        },
+        {
+            "title": "Valorant",
+            "webhook": "DISCORD_WEBHOOK_HTTPS_URL",
+            "colors": {
+                "internal": "0x77cc44",
+                "external": "0xdd4499"
+            },
+            "sources": [
+                {
+                    "url": "https://playvalorant.com/de-de/news/",
+                    "searchPattern": {
+                        "section": "a[data-testid^=articlefeaturedcard-component]",
+                        "title": "div[data-testid^=card-title]",
+                        "category": "div[data-testid^=card-category]",
+                        "description": "div[data-testid^=card-description]",
+                        "image": "img[data-testid^=mediaImage]"
+                    }
+                }
+            ],
+            "logfile": "valorant",
+            "retention": 10
+        }
+    ]
+}
