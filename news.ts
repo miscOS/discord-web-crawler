@@ -34,10 +34,6 @@ export class NewsManager {
             this.webCrawler.close();
         });
     }
-
-    getFeeds(): Feed[] {
-        return this.feeds;
-    }
 }
 
 export class Feed {

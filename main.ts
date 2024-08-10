@@ -29,9 +29,9 @@ try {
 // News Manager
 function update() {
     try {
-        let newsManager: NewsManager = new NewsManager(newsConfig, process.env.ENVIRONMENT);
-        console.log(`[update] running update with ${newsManager.getFeeds().length} feeds`);
+        console.log(`[update] running update with ${newsConfig.length} feeds`);
 
+        let newsManager: NewsManager = new NewsManager(newsConfig, process.env.ENVIRONMENT);
         newsManager.update();
     } catch (error) {
         console.log(error);
