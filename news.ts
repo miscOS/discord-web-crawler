@@ -70,7 +70,7 @@ export class Feed {
         }
         catch (error) {
             this.posted = [];
-            console.log(`Failed to load log file ${this.logfile}`);
+            console.log(`[data] failed to load log file ${this.logfile}`);
             console.log(error);
         }
     }
@@ -80,7 +80,7 @@ export class Feed {
             fs.writeFileSync(this.logfile, JSON.stringify(this.posted), { encoding: 'utf8', flag: 'w' });
         }
         catch (error) {
-            console.log(`Failed to save log file ${this.logfile}`);
+            console.log(`[data] failed to save log file ${this.logfile}`);
             console.log(error)
         }
     }
