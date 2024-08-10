@@ -38,5 +38,8 @@ function update() {
     }
 }
 
-//update();
-Cron.schedule('*/5 * * * *', update);
+if(process.env.ENVIRONMENT === 'DEVELOPMENT'){
+    update();
+} else {
+    Cron.schedule('*/5 * * * *', update);
+}
